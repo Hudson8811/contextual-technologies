@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Главная - &laquo;Контекстные технологии&raquo;</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="preload" href="assets/fonts/MoscowSansRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="top-panel">
+    <div class="container">
+      <div class="top-panel__wrapper">
+        <div class="top-panel__content">
+          <a class="top-panel__logo" href="/">
+            <picture>
+              <source type="image/webp" srcset="./assets/images/logo.webp">
+              <img src="./assets/images/logo.png" width="252" height="51" alt="Контекстные технологии">
+            </picture>
+          </a>
+          <button class="top-panel__button" type="button" aria-label="Открыть/закрыть меню"
+            id="js-nav-trigger"><span></span></button>
+          <nav class="nav nav--main">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--parent">
+                <a class="nav__link nav__link--main" href="about.html">О компании</a>
+              </li>
+              <li class="nav__item nav__item--parent">
+                <a class="nav__link nav__link--main" href="contacts.html">Контакты</a>
+              </li>
+
+            </ul>
+          </nav>
+          <a class="top-panel__search" href="#" aria-label="Поиск">
+            <svg width="21" height="21">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="top-panel__socials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                  <svg width="13" height="24">
+                    <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                  <svg width="25" height="14">
+                    <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-panel__form is-hidden">
+          <form>
+            <label><span class="visually-hidden">Введите ваш запрос</span>
+              <input type="text" placeholder="Введите Ваш запрос">
+            </label>
+            <button type="submit" aria-label="Отправить запрос">
+              <svg width="21" height="21">
+                <use xlink:href="assets/images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <h1 class="visually-hidden">Контекстные технологии</h1>
+    <div class="slider slider--background container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="glide__inner">
+                <h2 class="glide__title">contextual technologies</h2>
+                <h3 class="glide__subtitle">Рекламное агентство полного цикла</h3>
+                <p class="glide__paragraph">Консультирующее российские и международные бизнес- и госструктуры,
+                  предлагающее эффективные решения по организации коммуникаций.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__inner">
+                <h2 class="glide__title">contextual technologies</h2>
+                <h3 class="glide__subtitle">Рекламное агентство полного цикла</h3>
+                <p class="glide__paragraph">Консультирующее российские и международные бизнес- и госструктуры,
+                  предлагающее эффективные решения по организации коммуникаций.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__inner">
+                <h2 class="glide__title">contextual technologies</h2>
+                <h3 class="glide__subtitle">Рекламное агентство полного цикла</h3>
+                <p class="glide__paragraph">Консультирующее российские и международные бизнес- и госструктуры,
+                  предлагающее эффективные решения по организации коммуникаций.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" type="button" aria-label="переключить слайд" data-glide-dir="=0"></button>
+          <button class="glide__bullet" type="button" aria-label="переключить слайд" data-glide-dir="=1"></button>
+          <button class="glide__bullet" type="button" aria-label="переключить слайд" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card card--base card--full-height-desktop card--left-desktop card--position-one" style="--theme-color: #ff4c24"
+        data-hover="pr">
+        <div class="card__content">
+          <div class="card__image card__image--full">
+            <div class="card__background">
+              <picture>
+                <source type="image/jpg" media="screen and (max-width: 767px)"
+                  srcset="./assets/images/card-red-mobile.jpg">
+                <source type="image/jpg" media="screen and (max-width: 1199px)"
+                  srcset="./assets/images/card-red-tablet.jpg">
+                <img src="./assets/images/card-red-desktop.jpg" alt="Public Relations" width="460" height="530">
+              </picture>
+            </div>
+          </div>
+          <div class="card__header">
+            <div class="card__title">Public Relations</div>
+          </div>
+          <div class="card__footer">
+            <button class="card__btn" type="button"><span>Подробнее</span></button>
+          </div>
+          <div class="card__hover">
+            <div class="card__hover-title">Public Relations</div>
+            <p class="card__paragraph">PR-стратегия, информационные поводы для СМИ, контент-менеджмент.</p>
+            <p class="card__paragraph">Мы поможем сформировать корпоративную репутацию, выстроить внутренние и внешние
+              коммуникации с нужными аудиториями: с клиентами, СМИ, государственными органами, инвесторами.</p>
+            <button class="card__hover-btn btn" type="button"><span>Подробнее</span></button>
+            <div class="card__hover-background">
+              <svg width="242" height="242">
+                <use xlink:href="assets/images/sprite.svg#card-hover-red"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card--base card--half-height-desktop card--center-desktop card--position-two" style="--theme-color: #eecc01"
+        data-hover="content">
+        <div class="card__content">
+          <div class="card__image card__image--full">
+            <div class="card__background">
+              <picture>
+                <source type="image/jpg" media="screen and (max-width: 767px)"
+                  srcset="./assets/images/card-yellow-mobile.jpg">
+                <source type="image/jpg" media="screen and (max-width: 1199px)"
+                  srcset="./assets/images/card-yellow-tablet.jpg">
+                <img src="./assets/images/card-yellow-desktop.jpg" alt="Контент" width="470" height="260">
+              </picture>
+            </div>
+          </div>
+          <div class="card__header">
+            <div class="card__title">Контент</div>
+          </div>
+          <div class="card__footer">
+            <button class="card__btn" type="button"><span>Подробнее</span></button>
+          </div>
+          <div class="card__hover">
+            <div class="card__hover-title">Контент</div>
+            <p class="card__paragraph">Работа с содержанием и смыслами, сбор и создание текстовой и графической
+              информации, ее изложение, обработка, наполнение ваших ресурсов в русле вашей коммуникационной стратегии.
+            </p>
+            <button class="card__hover-btn" type="button"><span>Подробнее</span></button>
+            <div class="card__hover-background">
+              <svg width="186" height="220">
+                <use xlink:href="assets/images/sprite.svg#card-hover-yellow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card--base card--half-height-desktop card--center-desktop card--position-three" style="--theme-color: #00cd31"
+        data-hover="expertize">
+        <div class="card__content">
+          <div class="card__image card__image--full">
+            <div class="card__background">
+              <picture>
+                <source type="image/jpg" media="screen and (max-width: 767px)"
+                  srcset="./assets/images/card-green-mobile.jpg">
+                <source type="image/jpg" media="screen and (max-width: 1199px)"
+                  srcset="./assets/images/card-green-tablet.jpg">
+                <img src="./assets/images/card-green-desktop.jpg" alt="Digital" width="460" height="450">
+              </picture>
+            </div>
+          </div>
+          <div class="card__header">
+            <div class="card__title">Экспертиза</div>
+          </div>
+          <div class="card__footer">
+            <button class="card__btn" type="button"><span>Подробнее</span></button>
+          </div>
+          <div class="card__hover">
+            <div class="card__hover-title">Экспертиза</div>
+            <p class="card__paragraph">Ретроспективный анализ успешных кейсов, перспективное планирование, сценарии и
+              концепции коммуникации, текущий мониторинг активности аудитории и конкурентов.</p>
+            <button class="card__hover-btn" type="button"><span>Подробнее</span></button>
+            <div class="card__hover-background">
+              <svg width="254" height="108">
+                <use xlink:href="assets/images/sprite.svg#card-hover-green"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card--base card--height-desktop card--right-desktop card--position-four" style="--theme-color: #009af8"
+        data-hover="digital">
+        <div class="card__content">
+          <div class="card__image card__image--full">
+            <div class="card__background">
+              <picture>
+                <source type="image/jpg" media="screen and (max-width: 767px)"
+                  srcset="./assets/images/card-blue-mobile.jpg">
+                <source type="image/jpg" media="screen and (max-width: 1199px)"
+                  srcset="./assets/images/card-blue-tablet.jpg">
+                <img src="./assets/images/card-blue-desktop.jpg" alt="Экспертиза" width="470" height="260">
+              </picture>
+            </div>
+          </div>
+          <div class="card__header">
+            <div class="card__title">Digital</div>
+          </div>
+          <div class="card__footer">
+            <button class="card__btn" type="button"><span>Подробнее</span></button>
+          </div>
+        </div>
+        <div class="card__hover">
+          <div class="card__hover-title">Digital</div>
+          <p class="card__paragraph">PR онлайн, ведение аккаунтов в социальных сетях, работа с новостной и поисковой
+            выдачей в России и за рубежом.</p>
+          <p class="card__paragraph">Digital сегодня – один из основных коммуникационных каналов. Мы оказываем полный
+            спектр услуг в Интернет-пространстве</p>
+          <button class="card__hover-btn btn" type="button"><span>Подробнее</span></button>
+          <div class="card__hover-background">
+            <svg width="178" height="246">
+              <use xlink:href="assets/images/sprite.svg#card-hover-blue"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <a class="card card--base card--small card--full-width-tablet card--min-height-desktop card--right-desktop card--position-five"
+        href="#">
+        <div class="card__content card__content--small card__content--flex-column">
+          <div class="card__image card__image--full card__image--border-radius">
+            <div class="card__background">
+              <picture>
+                <source type="image/jpg" media="screen and (max-width: 767px)"
+                  srcset="./assets/images/card-violet-mobile.jpg">
+                <source type="image/jpg" media="screen and (max-width: 1199px)"
+                  srcset="./assets/images/card-violet-tablet.jpg">
+                <img src="./assets/images/card-violet-desktop.jpg" alt="Задать вопрос" width="460" height="70">
+              </picture>
+            </div>
+          </div>
+          <div class="card__header card__header--small">
+            <div class="card__title card__title--small">Задать вопрос</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container container--flex">
+      <div class="facts">
+        <h2 class="facts__title">Факты о компании</h2>
+        <div class="facts__subtitle">Кропотливый сбор информации об&nbsp;особенностях Вашего бизнеса</div>
+        <p class="facts__text">Кто-то может заверять, что им достаточно лишь адреса сайта, а все остальное они сделают
+          сами. Мы в корне не приемлем подобный подход! И приступаем к формированию рекламных материалов не раньше, чем
+          будем обладать необходимой полнотой сведений. Часто наиболее значимые детали выясняются лишь после "допроса с
+          пристрастием"!</p>
+        <a class="facts__btn btn" href=""><span>Еще фактов</span></a>
+      </div>
+      <div class="realize">
+        <h2 class="realize__title">реализовано проектов</h2>
+        <div class="realize__number">300+</div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">О компании</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <address class="footer__address">
+          <a class="footer__address-link footer__address-link--phone" href="tel:88888888888">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#phone"></use>
+            </svg>
+            8 888 888 88 88
+          </a>
+          <a class="footer__address-link footer__address-link--mail" href="mailto:mail@company.com">
+            <svg width="19" height="16">
+              <use xlink:href="assets/images/sprite.svg#mail"></use>
+            </svg>
+            mail@company.com
+          </a>
+        </address>
+        <div class="footer__search">
+          <a class="footer__search-link" href="#">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+            Поиск
+          </a>
+        </div>
+        <div class="footer__socials">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                <svg width="13" height="24">
+                  <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                <svg width="25" height="14">
+                  <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>&copy;&nbsp;Copyright 2007-2018. ООО &laquo;Контекстные технологии&raquo;</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/scripts/vendors.bundle.js"></script>
+  <script src="assets/scripts/main.bundle.js"></script>
+</body>
+
+</html>
