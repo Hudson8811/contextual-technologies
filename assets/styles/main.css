@@ -5997,6 +5997,10 @@ input::-webkit-outer-spin-button {
     height: 6.14583vw;
   }
 
+  .content__image {
+    max-width: 29.47916vw;
+  }
+
   .case .content table {
     margin-bottom: 2.13541vw;
   }
