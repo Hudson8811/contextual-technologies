@@ -3451,7 +3451,8 @@ input::-webkit-outer-spin-button {
   grid-column-end: 4;
 }
 
-.contacts-wrapper {
+.contacts-wrapper,
+.page__grid-content {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -5967,7 +5968,9 @@ input::-webkit-outer-spin-button {
   }
 
   .content__lead:before {
+    width: calc(100% + 5vw);
     height: 9.73958vw;
+    margin-left: -2.5vw;
   }
 
   .content--columns {
@@ -6030,7 +6033,7 @@ input::-webkit-outer-spin-button {
   }
 
   .content__slider {
-    max-width: 61.45833vw;
+    max-width: 52.70833vw;
     margin: 0 auto 0.98958vw;
   }
 
