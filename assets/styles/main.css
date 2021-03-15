@@ -5126,22 +5126,7 @@ input::-webkit-outer-spin-button {
   .case__log img {
     width: 100%;
   }
-  .content--columns {
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
-    -webkit-column-gap: 11px;
-    -moz-column-gap: 11px;
-    column-gap: 11px;
-    padding-left: 0;
-    margin-right: -10px;
-  }
-  .content--columns h2 {
-    -webkit-column-span: all;
-    -moz-column-span: all;
-    column-span: all;
-    margin-bottom: 17px;
-  }
+
   .glide {
     min-width: 15.625vw;
     margin-left: 0;
@@ -5162,18 +5147,30 @@ input::-webkit-outer-spin-button {
     bottom: 1.82291vw;
     width: 0.20833vw;
   }
+
   .glide__title {
     width: 54.7%;
     margin-bottom: 0.52083vw;
     font-size: 2.08333vw;
     color: #5c6579;
   }
+
+  .slider--small .glide__title {
+    margin-top: 2.39583vw;
+  }
+
   .glide__subtitle {
     padding-left: 2.44791vw;
     font-size: 1.14583vw;
     line-height: 1.18181;
     width: 43%;
   }
+
+  .slider--small .glide__subtitle {
+    padding-left: 2.76041vw;
+    bottom: -0.46875vw;
+  }
+
   .glide__paragraph {
     top: -0.78125vw;
     padding-top: 0.20833vw;
@@ -5182,23 +5179,34 @@ input::-webkit-outer-spin-button {
     line-height: 1.85714;
     width: 44%;
   }
+
+  .slider--small .glide__paragraph {
+    padding-left: 2.03125vw;
+    margin-top: 0.88541vw;
+  }
+
   .nav .moves-out {
     overflow: visible;
   }
+
   .nav__list {
     z-index: 3;
   }
+
   .nav__list--submenu {
     z-index: 2;
     display: none;
   }
+
   .nav__list--submenu .nav__item--parent {
     line-height: 50px;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
   .nav__list--submenu-level2 {
     position: inherit;
   }
+
   .nav__list--submenu-level2 .nav__item {
     line-height: 35px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -5866,6 +5874,26 @@ input::-webkit-outer-spin-button {
     margin-top: 0.72916vw;
   }
 
+  .content--columns {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 0.57291vw;
+    -moz-column-gap: 0.57291vw;
+    column-gap: 0.57291vw;
+    padding-left: 0;
+    margin-right: -0.52083vw;
+    margin-top: 6.35416vw;
+    margin-bottom: 2.70833vw;
+  }
+
+  .content--columns h2 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    margin-bottom: 0.88541vw;
+  }
+
   .content p,
   .content table {
     font-size: 0.83333vw;
@@ -5939,6 +5967,10 @@ input::-webkit-outer-spin-button {
 
   body {
     font-size: 0.83333vw;
+  }
+
+  .page:before {
+    height: 9.73958vw;
   }
 }
 
