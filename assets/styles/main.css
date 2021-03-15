@@ -1035,7 +1035,8 @@ body.no-scroll {
   padding: 0 10px;
 }
 
-.container--flex {
+.container--flex,
+.d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3176,7 +3177,7 @@ input::-webkit-outer-spin-button {
 .nav--aside {
   position: static;
   z-index: 1;
-  /*max-width: 280px;*/
+  max-width: none;
   width: 100%;
   padding: 0;
   background-color: #fff;
@@ -3444,6 +3445,13 @@ input::-webkit-outer-spin-button {
 .search-page {
   max-width: 780px;
   width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.contacts-wrapper {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 3;
@@ -4506,7 +4514,6 @@ input::-webkit-outer-spin-button {
     text-align: center;
   }
   .address__header {
-    padding-left: 24px;
     margin-top: 10px;
     margin-bottom: 41px;
   }
@@ -5114,7 +5121,6 @@ input::-webkit-outer-spin-button {
   .address__header {
     margin-top: 0.67708vw;
     margin-bottom: 2.13541vw;
-    padding-left: 1.04166vw;
     font-size: 1.30208vw;
     line-height: 1.04;
   }
@@ -5786,15 +5792,15 @@ input::-webkit-outer-spin-button {
   }
 
   .address:before {
-    top: 0.88541vw;
-    left: 0.52083vw;
+    top: 0.15625vw;
+    left: -1.35416vw;
     bottom: 1.82291vw;
     width: 0.20833vw;
   }
 
   .address__item {
     min-height: 2.08333vw;
-    margin-left: 0.78125vw;
+    margin-left: 0;
     margin-right: 0.52083vw;
     padding-left: 0.26041vw;
     padding-right: 0.26041vw;
@@ -5842,7 +5848,8 @@ input::-webkit-outer-spin-button {
 
   .form--contacts {
     max-width: none;
-    padding: 2.29166vw 0.78125vw 1.30208vw;
+    margin-bottom: 2.91666vw;
+    padding: 2.29166vw 0 1.30208vw;
   }
 
   .form form {
@@ -5859,7 +5866,7 @@ input::-webkit-outer-spin-button {
 
   .field__label {
     font-size: 0.72916vw;
-    top: 0.625vw;
+    top: 0;
   }
 
   .form input,
@@ -5872,6 +5879,12 @@ input::-webkit-outer-spin-button {
     top: 0.625vw;
     left: 0.78125vw;
     line-height: 0.88541vw;
+  }
+
+  .field__text--center {
+    top: auto;
+    left: 50%;
+    margin-top: 0;
   }
 
   .field__error {
@@ -5894,10 +5907,6 @@ input::-webkit-outer-spin-button {
   .field--file {
     margin-bottom: 0.78125vw;
     min-height: 4.6875vw;
-  }
-
-  .field__text--center {
-    margin-top: 0.78125vw;
   }
 
   .form__consent {
@@ -6192,15 +6201,13 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-bottom: 25px;
   }
   .address:before {
     display: block;
-    top: 10px;
+    top: 3px;
+    left: -26px;
     bottom: 30px;
-    left: 24px;
   }
   .breadcrumbs {
     padding: 12px 0 23px;
@@ -6622,13 +6629,24 @@ input::-webkit-outer-spin-button {
     justify-content: space-between;
   }
   .address__item {
+    width: calc(50% - 10px);
     margin-bottom: 10px;
     padding-right: 0;
     margin-right: 0;
-    width: auto;
+    margin-left: 0;
+  }
+  .address__item:first-child {
+    margin-left: 0;
+    padding-right: 0;
   }
   .address__btn-map {
+    top: -24px;
     right: 0;
+    transform: translateY(-100%);
+  }
+  .form--contacts {
+    padding-left: 0;
+    padding-right: 0;
   }
   .modal-map {
     padding-left: 24px;
@@ -6670,14 +6688,13 @@ input::-webkit-outer-spin-button {
   }
   .address {
     margin-bottom: 27px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .address:before {
     display: none;
   }
   .address__icon {
     margin-right: 9px;
+    flex-shrink: 0;
   }
   .breadcrumbs {
     padding: 12px 0 13px;
@@ -7022,6 +7039,9 @@ input::-webkit-outer-spin-button {
     grid-template-rows: -webkit-max-content 1fr 1fr;
     grid-template-rows: max-content 1fr 1fr;
   }
+  .contacts-wrapper {
+    margin-top: 40px;
+  }
   .search-page {
     grid-row: 2/3;
     grid-column: 1/-1;
@@ -7133,6 +7153,8 @@ input::-webkit-outer-spin-button {
     margin-top: 20px;
     margin-left: 0;
     position: relative;
+
+    display: none;
   }
   .address__item:first-child {
     padding-right: 0;
@@ -7144,6 +7166,13 @@ input::-webkit-outer-spin-button {
   }
   .form textarea {
     height: 107px;
+  }
+  .form--contacts {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-bottom: -22px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .modal-map {
     padding-left: 0;

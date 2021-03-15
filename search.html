@@ -1,435 +1,529 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Поиск - &laquo;Контекстные технологии&raquo;</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="preload" href="assets/fonts/MoscowSansRegular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="top-panel">
-      <div class="container">
-        <div class="top-panel__wrapper">
-          <div class="top-panel__content"><a class="top-panel__logo" href="/">
-              <picture>
-                <source type="image/webp" srcset="./assets/images/logo.webp"><img src="./assets/images/logo.png" width="252" height="51" alt="Контекстные технологии">
-              </picture></a>
-            <button class="top-panel__button" type="button" aria-label="Открыть/закрыть меню" id="js-nav-trigger"><span></span></button>
-            <nav class="nav nav--main">
-              <ul class="nav__list">
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ff4c24"><a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Внешняя пресс-служба</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Media Relation</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Международный PR</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Антикризисный PR</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ffc700"><a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Тексты</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Баннеры</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Видео</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Компьютерная графика</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #00cd31"><a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Анализ и исследования</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Мониторинг СМИ и соц. сетей</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Концепции и стратегии</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #009af8"><a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">SMM</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Управление репутацией</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Реклама</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-              </ul>
-            </nav><a class="top-panel__search" href="#" aria-label="Поиск">
-                  <svg width="21" height="21">
-                    <use xlink:href="assets/images/sprite.svg#search"></use>
-                  </svg></a>
-            <div class="top-panel__socials">
-              <ul class="socials">
-                <li class="socials__item"><a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
-                                  <svg width="13" height="24">
-                                    <use xlink:href="assets/images/sprite.svg#001-fb"></use>
-                                  </svg></a></li>
-                <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
-                                  <svg width="25" height="14">
-                                    <use xlink:href="assets/images/sprite.svg#002-vk"></use>
-                                  </svg></a></li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Поиск - &laquo;Контекстные технологии&raquo;</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="preload" href="assets/fonts/MoscowSansRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="top-panel">
+    <div class="container">
+      <div class="top-panel__wrapper">
+        <div class="top-panel__content">
+          <a class="top-panel__logo" href="/">
+            <picture>
+              <source type="image/webp" srcset="./assets/images/logo.webp">
+              <img src="./assets/images/logo.png" width="252" height="51" alt="Контекстные технологии">
+            </picture>
+          </a>
+          <button class="top-panel__button" type="button" aria-label="Открыть/закрыть меню"
+            id="js-nav-trigger"><span></span></button>
+          <nav class="nav nav--main">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ff4c24">
+                <a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
+                <ul class="nav__list nav__list--submenu is-hidden">
+                  <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Внешняя пресс-служба</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Media Relation</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Международный PR</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Антикризисный PR</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ffc700">
+                <a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
+                <ul class="nav__list nav__list--submenu is-hidden">
+                  <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Тексты</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Баннеры</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Видео</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Компьютерная графика</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #00cd31">
+                <a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
+                <ul class="nav__list nav__list--submenu is-hidden">
+                  <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Анализ и исследования</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Мониторинг СМИ и соц. сетей</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Концепции и стратегии</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #009af8">
+                <a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
+                <ul class="nav__list nav__list--submenu is-hidden">
+                  <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">SMM</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Управление репутацией</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                    <a class="nav__link" href="#">Реклама</a>
+                    <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                      <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a>
+                      </li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                      <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a class="top-panel__search" href="#" aria-label="Поиск">
+            <svg width="21" height="21">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="top-panel__socials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                  <svg width="13" height="24">
+                    <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                  <svg width="25" height="14">
+                    <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="top-panel__form is-hidden">
-            <form>
+        </div>
+        <div class="top-panel__form is-hidden">
+          <form>
+            <label><span class="visually-hidden">Введите ваш запрос</span>
+              <input type="text" placeholder="Введите Ваш запрос">
+            </label>
+            <button type="submit" aria-label="Отправить запрос">
+              <svg width="21" height="21">
+                <use xlink:href="assets/images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page" style="--color: #f1f6f9" data-color="grey">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs__item"><a>Результаты поиска</a></li>
+      </ul>
+      <div class="page__grid-wrapper">
+        <aside class="nav nav--aside">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--parent" style="--color: #ff4c24">
+              <a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
+              <ul class="nav__list nav__list--submenu is-hidden">
+                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Внешняя пресс-служба</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Media Relation</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Международный PR</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Антикризисный PR</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--parent" style="--color: #ffc700">
+              <a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
+              <ul class="nav__list nav__list--submenu is-hidden">
+                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Тексты</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Баннеры</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Видео</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Компьютерная графика</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--parent" style="--color: #00cd31">
+              <a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
+              <ul class="nav__list nav__list--submenu is-hidden">
+                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Анализ и исследования</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Мониторинг СМИ и соц. сетей</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Концепции и стратегии</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--parent" style="--color: #009af8">
+              <a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
+              <ul class="nav__list nav__list--submenu is-hidden">
+                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">SMM</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Управление репутацией</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--parent nav__item--submenu-parent">
+                  <a class="nav__link" href="#">Реклама</a>
+                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
+                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <section class="search-page">
+          <div class="search-page__header">
+            <h1>Результаты поиска</h1>
+            <form method="get">
               <label><span class="visually-hidden">Введите ваш запрос</span>
-                <input type="text" placeholder="Введите Ваш запрос">
+                <input type="text" name="search" placeholder="Текст запроса">
               </label>
               <button type="submit" aria-label="Отправить запрос">
-                              <svg width="21" height="21">
-                                <use xlink:href="assets/images/sprite.svg#search"></use>
-                              </svg>
+                <svg width="16" height="16">
+                  <use xlink:href="assets/images/sprite.svg#search"></use>
+                </svg>
               </button>
             </form>
           </div>
-        </div>
-      </div>
-    </header>
-    <main class="page" style="--color: #f1f6f9" data-color="grey">
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-          <li class="breadcrumbs__item"><a>Результаты поиска</a></li>
-        </ul>
-        <div class="page__grid-wrapper">
-          <aside class="nav nav--aside">
-            <ul class="nav__list">
-              <li class="nav__item nav__item--parent" style="--color: #ff4c24"><a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
-                          <ul class="nav__list nav__list--submenu is-hidden">
-                            <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Внешняя пресс-служба</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Media Relation</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Международный PR</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Антикризисный PR</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                          </ul>
+          <div class="search-page__results">
+            <ul>
+              <li>
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p>
+                </a>
               </li>
-              <li class="nav__item nav__item--parent" style="--color: #ffc700"><a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
-                          <ul class="nav__list nav__list--submenu is-hidden">
-                            <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Тексты</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Баннеры</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Видео</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Компьютерная графика</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                          </ul>
+              <li>
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p>
+                </a>
               </li>
-              <li class="nav__item nav__item--parent" style="--color: #00cd31"><a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
-                          <ul class="nav__list nav__list--submenu is-hidden">
-                            <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Анализ и исследования</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Мониторинг СМИ и соц. сетей</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Концепции и стратегии</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                          </ul>
+              <li>
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p>
+                </a>
               </li>
-              <li class="nav__item nav__item--parent" style="--color: #009af8"><a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
-                          <ul class="nav__list nav__list--submenu is-hidden">
-                            <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">SMM</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Управление репутацией</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Реклама</a>
-                              <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                              </ul>
-                            </li>
-                          </ul>
+              <li>
+                <a href="#">
+                  <h2>Название статьи</h2>
+                  <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p>
+                </a>
               </li>
             </ul>
-          </aside>
-          <section class="search-page">
-            <div class="search-page__header">
-              <h1>Результаты поиска</h1>
-              <form method="get">
-                <label><span class="visually-hidden">Введите ваш запрос</span>
-                  <input type="text" name="search" placeholder="Текст запроса">
-                </label>
-                <button type="submit" aria-label="Отправить запрос">
-                                <svg width="16" height="16">
-                                  <use xlink:href="assets/images/sprite.svg#search"></use>
-                                </svg>
-                </button>
-              </form>
-            </div>
-            <div class="search-page__results">
-              <ul>
-                <li><a href="#">
-                    <h2>Название статьи</h2>
-                    <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p></a></li>
-                <li><a href="#">
-                    <h2>Название статьи</h2>
-                    <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p></a></li>
-                <li><a href="#">
-                    <h2>Название статьи</h2>
-                    <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p></a></li>
-                <li><a href="#">
-                    <h2>Название статьи</h2>
-                    <p>Текст статьи, <span> совпадающие с запросом слова,</span> текст статьи</p></a></li>
-              </ul>
-            </div>
-          </section>
-          <button class="btn btn--aside" type="button">Задать вопрос</button>
+          </div>
+        </section>
+        <button class="btn btn--aside" type="button">Задать вопрос</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">О компании</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <address class="footer__address">
+          <a class="footer__address-link footer__address-link--phone" href="tel:88888888888">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#phone"></use>
+            </svg>
+            8 888 888 88 88
+          </a>
+          <a class="footer__address-link footer__address-link--mail" href="mailto:mail@company.com">
+            <svg width="19" height="16">
+              <use xlink:href="assets/images/sprite.svg#mail"></use>
+            </svg>
+            mail@company.com
+          </a>
+        </address>
+        <div class="footer__search">
+          <a class="footer__search-link" href="#">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+            Поиск
+          </a>
+        </div>
+        <div class="footer__socials">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                <svg width="13" height="24">
+                  <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                <svg width="25" height="14">
+                  <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>&copy;&nbsp;Copyright 2007-2018. ООО &laquo;Контекстные технологии&raquo;</p>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item"><a href="#">О компании</a></li>
-              <li class="footer__nav-item"><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <address class="footer__address"><a class="footer__address-link footer__address-link--phone" href="tel:88888888888">
-                  <svg width="19" height="19">
-                    <use xlink:href="assets/images/sprite.svg#phone"></use>
-                  </svg>8 888 888 88 88</a><a class="footer__address-link footer__address-link--mail" href="mailto:mail@company.com">
-                  <svg width="19" height="16">
-                    <use xlink:href="assets/images/sprite.svg#mail"></use>
-                  </svg>mail@company.com</a></address>
-          <div class="footer__search"><a class="footer__search-link" href="#">
-                  <svg width="19" height="19">
-                    <use xlink:href="assets/images/sprite.svg#search"></use>
-                  </svg>Поиск</a></div>
-          <div class="footer__socials">
-            <ul class="socials">
-              <li class="socials__item"><a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
-                              <svg width="13" height="24">
-                                <use xlink:href="assets/images/sprite.svg#001-fb"></use>
-                              </svg></a></li>
-              <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
-                              <svg width="25" height="14">
-                                <use xlink:href="assets/images/sprite.svg#002-vk"></use>
-                              </svg></a></li>
-            </ul>
-          </div>
-          <div class="footer__copyright">
-            <p>&copy;&nbsp;Copyright 2007-2018. ООО &laquo;Контекстные технологии&raquo;</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="assets/scripts/vendors.bundle.js"></script>
-    <script src="assets/scripts/main.bundle.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="assets/scripts/vendors.bundle.js"></script>
+  <script src="assets/scripts/main.bundle.js"></script>
+</body>
+
 </html>
