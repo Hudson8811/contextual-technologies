@@ -5772,6 +5772,10 @@ input::-webkit-outer-spin-button {
     box-shadow: 0.10416vw 0.36458vw 2.13541vw rgb(3 7 14 / 20%);
   }
 
+  .nav--aside .nav__list .nav__list {
+    box-shadow: none;
+  }
+
   .nav--aside .nav__item--parent .nav__link {
     line-height: 0.83333vw;
   }
@@ -7042,12 +7046,9 @@ input::-webkit-outer-spin-button {
     grid-template-rows: -webkit-max-content 1fr 1fr;
     grid-template-rows: max-content 1fr 1fr;
   }
-  .contacts-wrapper {
-    margin-top: 40px;
-  }
+  .contacts-wrapper,
+  .page__grid-content,
   .search-page {
-    grid-row: 2/3;
-    grid-column: 1/-1;
     margin-top: 40px;
   }
   .search-page__header {
