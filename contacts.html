@@ -1,330 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Контакты - &laquo;Контекстные технологии&raquo;</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="preload" href="assets/fonts/MoscowSansRegular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="top-panel">
-      <div class="container">
-        <div class="top-panel__wrapper">
-          <div class="top-panel__content"><a class="top-panel__logo" href="/">
-              <picture>
-                <source type="image/webp" srcset="./assets/images/logo.webp"><img src="./assets/images/logo.png" width="252" height="51" alt="Контекстные технологии">
-              </picture></a>
-            <button class="top-panel__button" type="button" aria-label="Открыть/закрыть меню" id="js-nav-trigger"><span></span></button>
-            <nav class="nav nav--main">
-              <ul class="nav__list">
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ff4c24"><a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Внешняя пресс-служба</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Media Relation</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Международный PR</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Антикризисный PR</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #ffc700"><a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Тексты</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Баннеры</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Видео</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Компьютерная графика</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #00cd31"><a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Анализ и исследования</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Мониторинг СМИ и соц. сетей</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Концепции и стратегии</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-                <li class="nav__item nav__item--parent nav__item--main-parent dropdown-opener" style="--color: #009af8"><a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
-                              <ul class="nav__list nav__list--submenu is-hidden">
-                                <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">SMM</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Управление репутацией</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav__item nav__item--parent nav__item--submenu-parent"><a class="nav__link" href="#">Реклама</a>
-                                  <ul class="nav__list nav__list--submenu nav__list--submenu-level2 is-hidden">
-                                    <li class="nav__item nav__item--back"><a class="nav__link nav__link--level2" href="#">Назад</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 1</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 2</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 3</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--level2" href="#">Подкатегория 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                </li>
-              </ul>
-            </nav><a class="top-panel__search" href="#" aria-label="Поиск">
-                  <svg width="21" height="21">
-                    <use xlink:href="assets/images/sprite.svg#search"></use>
-                  </svg></a>
-            <div class="top-panel__socials">
-              <ul class="socials">
-                <li class="socials__item"><a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
-                                  <svg width="13" height="24">
-                                    <use xlink:href="assets/images/sprite.svg#001-fb"></use>
-                                  </svg></a></li>
-                <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
-                                  <svg width="25" height="14">
-                                    <use xlink:href="assets/images/sprite.svg#002-vk"></use>
-                                  </svg></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="top-panel__form is-hidden">
-            <form>
-              <label><span class="visually-hidden">Введите ваш запрос</span>
-                <input type="text" placeholder="Введите Ваш запрос">
-              </label>
-              <button type="submit" aria-label="Отправить запрос">
-                              <svg width="21" height="21">
-                                <use xlink:href="assets/images/sprite.svg#search"></use>
-                              </svg>
-              </button>
-            </form>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Контакты - &laquo;Контекстные технологии&raquo;</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="preload" href="assets/fonts/MoscowSansRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="top-panel">
+    <div class="container">
+      <div class="top-panel__wrapper">
+        <div class="top-panel__content">
+          <a class="top-panel__logo" href="/">
+            <picture>
+              <source type="image/webp" srcset="./assets/images/logo.webp">
+              <img src="./assets/images/logo.png" width="252" height="51" alt="Контекстные технологии">
+            </picture>
+          </a>
+          <button class="top-panel__button" type="button" aria-label="Открыть/закрыть меню"
+            id="js-nav-trigger"><span></span></button>
+          <nav class="nav nav--main">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--parent">
+                <a class="nav__link nav__link--main" href="about.html">О компании</a>
+              </li>
+              <li class="nav__item nav__item--parent">
+                <a class="nav__link nav__link--main" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="top-panel__search" href="#" aria-label="Поиск">
+            <svg width="21" height="21">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="top-panel__socials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                  <svg width="13" height="24">
+                    <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                  <svg width="25" height="14">
+                    <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="page" data-color="none">
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-          <li class="breadcrumbs__item"><a>Контакты</a></li>
-        </ul>
-      </div>
-      <div class="address container container--flex">
-        <h1 class="address__header">Контакты</h1>
-        <address class="address__contacts"><a class="address__item address__item--link" href="geo:37.671073,55.787120" rel="nofollow">
-                          <svg class="address__icon" width="22" height="19">
-                            <use xlink:href="assets/images/sprite.svg#address-pin-location"></use>
-                          </svg><span>107113, г. Москва, ул. Шумкина, д. 20 с. 1, офис 714</span></a><a class="address__item address__item--link address__item--tel" href="tel:+74956417164">
-                          <svg class="address__icon" width="19" height="19">
-                            <use xlink:href="assets/images/sprite.svg#address-telephone"></use>
-                          </svg><span>+7(495) 64-171-64</span></a><a class="address__item address__item--link" href="mailto:info@yes-context.ru">
-                          <svg class="address__icon" width="19" height="19">
-                            <use xlink:href="assets/images/sprite.svg#address-comment"></use>
-                          </svg><span>info@yes-context.ru</span></a>
-          <div class="address__item">
-                          <svg class="address__icon" width="19" height="19">
-                            <use xlink:href="assets/images/sprite.svg#address-clock"></use>
-                          </svg><span>Пн-Пт 10:00 - 19:00</span>
-          </div>
-          <button class="address__btn-map js-map-open" type="button">
-                          <svg class="address__btn-icon" width="19" height="19">
-                            <use xlink:href="assets/images/sprite.svg#map"></use>
-                          </svg><span>Смотреть на карте</span>
-          </button>
-        </address>
-      </div>
-      <div class="container container--no-padding">
-        <div class="form form--contacts">
-          <form action="#" method="post">
-            <h2 class="form__header">Обратная связь</h2>
-            <div class="field field--name">
-              <label class="field__label">
-                <input type="text" name="name" required autocomplete="off" minlength="2"><span class="field__text text">Представьтесь:</span><span class="field__error field__error--char">поле не должно содержать цифры</span><span class="field__error field__error--required">поле должно быть заполнено</span>
-              </label>
-            </div>
-            <div class="field field--phone">
-              <label class="field__label">
-                <input type="text" name="phone" required autocomplete="off" inputmode="tel" minlength="17" maxlength="17"><span class="field__text">Телефон:</span><span class="field__error field__error--full">поле заполнено не полностью</span><span class="field__error field__error--char">поле не должно содержать буквы</span><span class="field__error field__error--required">поле должно быть заполнено</span>
-              </label>
-            </div>
-            <div class="field field--email">
-              <label class="field__label">
-                <input type="email" name="email" required autocomplete="off" minlength="2"><span class="field__text">E-mail:</span><span class="field__error field__error--char">поле не должно одержать цифры</span><span class="field__error field__error--required">поле должно быть заполнено</span>
-              </label>
-            </div>
-            <div class="field field--msg">
-              <label class="field__label">
-                <textarea name="email" required autocomplete="off" minlength="2"></textarea><span class="field__text">Сообщение:</span><span class="field__error field__error--char">поле не должно содержать цифры</span><span class="field__error field__error--required">поле должно быть заполнено</span>
-              </label>
-            </div>
-            <div class="field field--file">
-              <label class="field__label field__label--file">
-                <input type="file" name="file"><span class="field__text field__text--center">Прикрепить файл</span><span class="field__error field__error--char">поле не должно содержать цифры</span><span class="field__error field__error--required">поле должно быть заполнено</span>
-              </label>
-            </div>
-            <div class="field field--submit">
-              <p class="form__consent">Нажимая отправить, вы даёте своё согласие на обработку&nbsp;персональных данных в соответствии с <a class="form__consent-link" href="">политикой конфидициальности</a>
-              </p>
-              <button class="js-thanks-open" type="submit"><span>Отправить</span></button>
-            </div>
+        <div class="top-panel__form is-hidden">
+          <form>
+            <label><span class="visually-hidden">Введите ваш запрос</span>
+              <input type="text" placeholder="Введите Ваш запрос">
+            </label>
+            <button type="submit" aria-label="Отправить запрос">
+              <svg width="21" height="21">
+                <use xlink:href="assets/images/sprite.svg#search"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
-      <div class="overlay no-display">
-        <!--.modal-map.no-display
-        button(type="button").modal__close
-          span.visually-hidden Закрыть
-        .modal-map__title Адрес на карте
-        .modal-map__address 107113, г. Москва, ул. Шумкина, д. 20 с. 1, офис 714
-        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.346384211085!2d37.66873831593188!3d55.78722298056262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53584d0651261%3A0xba525273abdde888!2z0YPQuy4g0KjRg9C80LrQuNC90LAsIDIwINGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCAxMDcxMTM!5e0!3m2!1sru!2sru!4v1567493978944!5m2!1sru!2sru" width="820" height="510" frameborder="0" style="border:0;" allowfullscreen="").modal-map__google
-        
-        -->
-        <!--.modal-thanks.no-display
-        button(type="button").modal__close
-          span.visually-hidden Закрыть
-        .modal-thanks__title Спасибо
-        .modal-thanks__text
-          span.modal-thanks__text--desktop Ваш запрос успешно доставлен и в ближайшее время будет рассмотрен.
-          span.modal-thanks__text--desktop-alternative Мы получили Вашу заявку, вскоре наш специалист свяжется с Вами.
-        -->
+    </div>
+  </header>
+  <main class="page" data-color="none">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs__item"><a>Контакты</a></li>
+      </ul>
+    </div>
+    <div class="address container container--flex">
+      <h1 class="address__header">Контакты</h1>
+      <address class="address__contacts">
+        <a class="address__item address__item--link address__item--address" href="geo:37.671073,55.787120" rel="nofollow">
+          <svg class="address__icon" width="22" height="19">
+            <use xlink:href="assets/images/sprite.svg#address-pin-location"></use>
+          </svg>
+          <span>107113, г. Москва, ул. Шумкина, д. 20 с. 1, офис 714</span>
+        </a>
+        <a class="address__item address__item--link address__item--tel" href="tel:+74956417164">
+          <svg class="address__icon" width="19" height="19">
+            <use xlink:href="assets/images/sprite.svg#address-telephone"></use>
+          </svg>
+          <span>+7(495) 64-171-64</span>
+        </a>
+        <a class="address__item address__item--link address__item--email" href="mailto:info@yes-context.ru">
+          <svg class="address__icon" width="19" height="19">
+            <use xlink:href="assets/images/sprite.svg#address-comment"></use>
+          </svg>
+          <span>info@yes-context.ru</span>
+        </a>
+        <div class="address__item address__item--time">
+          <svg class="address__icon" width="19" height="19">
+            <use xlink:href="assets/images/sprite.svg#address-clock"></use>
+          </svg>
+          <span>Пн-Пт 10:00 - 19:00</span>
+        </div>
+        <button class="address__btn-map js-map-open" type="button">
+          <svg class="address__btn-icon" width="19" height="19">
+            <use xlink:href="assets/images/sprite.svg#map"></use>
+          </svg>
+          <span>Смотреть на карте</span>
+        </button>
+      </address>
+    </div>
+    <div class="container container--no-padding">
+      <div class="form form--contacts">
+        <form action="#" method="post">
+          <h2 class="form__header">Обратная связь</h2>
+          <div class="field field--name">
+            <label class="field__label">
+              <input type="text" name="name" required autocomplete="off" minlength="2"><span
+                class="field__text text">Представьтесь:</span><span class="field__error field__error--char">поле не
+                должно содержать цифры</span><span class="field__error field__error--required">поле должно быть
+                заполнено</span>
+            </label>
+          </div>
+          <div class="field field--phone">
+            <label class="field__label">
+              <input type="text" name="phone" required autocomplete="off" inputmode="tel" minlength="17"
+                maxlength="17"><span class="field__text">Телефон:</span><span
+                class="field__error field__error--full">поле заполнено не полностью</span><span
+                class="field__error field__error--char">поле не должно содержать буквы</span><span
+                class="field__error field__error--required">поле должно быть заполнено</span>
+            </label>
+          </div>
+          <div class="field field--email">
+            <label class="field__label">
+              <input type="email" name="email" required autocomplete="off" minlength="2"><span
+                class="field__text">E-mail:</span><span class="field__error field__error--char">поле не должно одержать
+                цифры</span><span class="field__error field__error--required">поле должно быть заполнено</span>
+            </label>
+          </div>
+          <div class="field field--msg">
+            <label class="field__label">
+              <textarea name="email" required autocomplete="off" minlength="2"></textarea><span
+                class="field__text">Сообщение:</span><span class="field__error field__error--char">поле не должно
+                содержать цифры</span><span class="field__error field__error--required">поле должно быть
+                заполнено</span>
+            </label>
+          </div>
+          <div class="field field--file">
+            <label class="field__label field__label--file">
+              <input type="file" name="file"><span class="field__text field__text--center">Прикрепить файл</span><span
+                class="field__error field__error--char">поле не должно содержать цифры</span><span
+                class="field__error field__error--required">поле должно быть заполнено</span>
+            </label>
+          </div>
+          <div class="field field--submit">
+            <p class="form__consent">Нажимая отправить, вы даёте своё согласие на обработку&nbsp;персональных данных в
+              соответствии с <a class="form__consent-link" href="">политикой конфидициальности</a>
+            </p>
+            <button class="js-thanks-open" type="submit"><span>Отправить</span></button>
+          </div>
+        </form>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item"><a href="#">О компании</a></li>
-              <li class="footer__nav-item"><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <address class="footer__address"><a class="footer__address-link footer__address-link--phone" href="tel:88888888888">
-                  <svg width="19" height="19">
-                    <use xlink:href="assets/images/sprite.svg#phone"></use>
-                  </svg>8 888 888 88 88</a><a class="footer__address-link footer__address-link--mail" href="mailto:mail@company.com">
-                  <svg width="19" height="16">
-                    <use xlink:href="assets/images/sprite.svg#mail"></use>
-                  </svg>mail@company.com</a></address>
-          <div class="footer__search"><a class="footer__search-link" href="#">
-                  <svg width="19" height="19">
-                    <use xlink:href="assets/images/sprite.svg#search"></use>
-                  </svg>Поиск</a></div>
-          <div class="footer__socials">
-            <ul class="socials">
-              <li class="socials__item"><a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
-                              <svg width="13" height="24">
-                                <use xlink:href="assets/images/sprite.svg#001-fb"></use>
-                              </svg></a></li>
-              <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
-                              <svg width="25" height="14">
-                                <use xlink:href="assets/images/sprite.svg#002-vk"></use>
-                              </svg></a></li>
-            </ul>
-          </div>
-          <div class="footer__copyright">
-            <p>&copy;&nbsp;Copyright 2007-2018. ООО &laquo;Контекстные технологии&raquo;</p>
-          </div>
+    </div>
+    <div class="overlay no-display">
+      <!--.modal-map.no-display
+          button(type="button").modal__close
+            span.visually-hidden Закрыть
+          .modal-map__title Адрес на карте
+          .modal-map__address 107113, г. Москва, ул. Шумкина, д. 20 с. 1, офис 714
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.346384211085!2d37.66873831593188!3d55.78722298056262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53584d0651261%3A0xba525273abdde888!2z0YPQuy4g0KjRg9C80LrQuNC90LAsIDIwINGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCAxMDcxMTM!5e0!3m2!1sru!2sru!4v1567493978944!5m2!1sru!2sru" width="820" height="510" frameborder="0" style="border:0;" allowfullscreen="").modal-map__google
+          
+          -->
+      <!--.modal-thanks.no-display
+          button(type="button").modal__close
+            span.visually-hidden Закрыть
+          .modal-thanks__title Спасибо
+          .modal-thanks__text
+            span.modal-thanks__text--desktop Ваш запрос успешно доставлен и в ближайшее время будет рассмотрен.
+            span.modal-thanks__text--desktop-alternative Мы получили Вашу заявку, вскоре наш специалист свяжется с Вами.
+          -->
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">О компании</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <address class="footer__address">
+          <a class="footer__address-link footer__address-link--phone" href="tel:88888888888">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#phone"></use>
+            </svg>
+            8 888 888 88 88
+          </a>
+          <a class="footer__address-link footer__address-link--mail" href="mailto:mail@company.com">
+            <svg width="19" height="16">
+              <use xlink:href="assets/images/sprite.svg#mail"></use>
+            </svg>
+            mail@company.com
+          </a>
+        </address>
+        <div class="footer__search">
+          <a class="footer__search-link" href="#">
+            <svg width="19" height="19">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+            Поиск
+          </a>
+        </div>
+        <div class="footer__socials">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#" title="Мы в Facebook">
+                <svg width="13" height="24">
+                  <use xlink:href="assets/images/sprite.svg#001-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#" title="Мы в Vkontakte">
+                <svg width="25" height="14">
+                  <use xlink:href="assets/images/sprite.svg#002-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>&copy;&nbsp;Copyright 2007-2018. ООО &laquo;Контекстные технологии&raquo;</p>
         </div>
       </div>
-    </footer>
-    <script src="assets/scripts/vendors.bundle.js"></script>
-    <script src="assets/scripts/main.bundle.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="assets/scripts/vendors.bundle.js"></script>
+  <script src="assets/scripts/main.bundle.js"></script>
+</body>
+
 </html>
