@@ -82,7 +82,7 @@
       <div class="page__grid-wrapper">
         <aside class="nav nav--aside">
           <ul class="nav__list">
-            <li class="nav__item nav__item--parent" style="--color: #ff4c24">
+            <li class="nav__item nav__item--parent nav__item--theme-red" style="--color: #ff4c24">
               <a class="nav__link nav__link--main" href="#" data-hover="pr">PR</a>
               <ul class="nav__list nav__list--submenu is-hidden">
                 <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
@@ -128,7 +128,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav__item nav__item--parent" style="--color: #ffc700">
+            <li class="nav__item nav__item--parent nav__item--theme-yellow" style="--color: #ffc700">
               <a class="nav__link nav__link--main" href="#" data-hover="content">Контент</a>
               <ul class="nav__list nav__list--submenu is-hidden">
                 <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
@@ -174,7 +174,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav__item nav__item--parent" style="--color: #00cd31">
+            <li class="nav__item nav__item--parent nav__item--theme-green" style="--color: #00cd31">
               <a class="nav__link nav__link--main" href="#" data-hover="expertize">Экспертиза</a>
               <ul class="nav__list nav__list--submenu is-hidden">
                 <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
@@ -210,7 +210,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav__item nav__item--parent" style="--color: #009af8">
+            <li class="nav__item nav__item--parent nav__item--theme-blue" style="--color: #009af8">
               <a class="nav__link nav__link--main" href="#" data-hover="digital">Digital</a>
               <ul class="nav__list nav__list--submenu is-hidden">
                 <li class="nav__item nav__item--back"><a class="nav__link" href="#">Назад</a></li>
@@ -478,6 +478,31 @@
       </div>
     </div>
   </footer>
+  <script src="assets/scripts/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script>
+    (function () {
+      let html = document.querySelector('html');
+      let body = document.querySelector('body');
+      let footer = document.querySelector('.footer');
+
+      if (footer && window.innerHeight >= html.offsetHeight) {
+        let footerHeight = footer.offsetHeight;
+
+        footer.style.position = 'fixed';
+        footer.style.left = '0';
+        footer.style.right = '0';
+        footer.style.bottom = '0';
+
+        body.style.paddingBottom = footerHeight + 'px';
+
+        window.addEventListener('resize', function () {
+          footerHeight = footer.offsetHeight;
+          body.style.paddingBottom = footerHeight + 'px';
+        });
+      }
+    })();
+  </script>
   <script src="assets/scripts/vendors.bundle.js"></script>
   <script src="assets/scripts/main.bundle.js"></script>
 </body>

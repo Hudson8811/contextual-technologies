@@ -343,6 +343,32 @@
       </div>
     </div>
   </footer>
+  <script src="assets/scripts/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script>
+    (function () {
+      let html = document.querySelector('html');
+      let body = document.querySelector('body');
+      let footer = document.querySelector('.footer');
+
+      if (footer && window.innerHeight >= html.offsetHeight) {
+        let footerHeight = footer.offsetHeight;
+
+        footer.style.position = 'fixed';
+        footer.style.left = '0';
+        footer.style.right = '0';
+        footer.style.bottom = '0';
+
+        body.style.paddingBottom = footerHeight + 'px';
+
+        window.addEventListener('resize', function () {
+          footerHeight = footer.offsetHeight;
+          body.style.paddingBottom = footerHeight + 'px';
+        });
+      }
+    })();
+  </script>
+  
   <script src="assets/scripts/vendors.bundle.js"></script>
   <script src="assets/scripts/main.bundle.js"></script>
 </body>
