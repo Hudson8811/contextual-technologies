@@ -5668,9 +5668,9 @@ input::-webkit-outer-spin-button {
   }
 
   .glide__title {
-    width: 54.7%;
+    width: 56%;
     margin-bottom: 0.52083vw;
-    font-size: 2.08333vw;
+    font-size: 2.5vw;
     color: #5c6579;
   }
 
@@ -5679,10 +5679,12 @@ input::-webkit-outer-spin-button {
   }
 
   .glide__subtitle {
-    padding-left: 2.44791vw;
+    padding-left: 1.71875vw;
     font-size: 1.14583vw;
     line-height: 1.18181;
     width: 43%;
+    align-self: flex-start;
+    margin-top: 2.5vw;
   }
 
   .slider--small .glide__subtitle {
@@ -5694,9 +5696,11 @@ input::-webkit-outer-spin-button {
     top: -0.78125vw;
     padding-top: 0.20833vw;
     padding-left: 1.71875vw;
-    font-size: 0.72916vw;
+    font-size: .83333vw;
     line-height: 1.85714;
     width: 44%;
+    align-self: flex-start;
+    margin-top: 0;
   }
 
   .slider--small .glide__paragraph {
