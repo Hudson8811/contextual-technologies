@@ -5823,7 +5823,7 @@ input::-webkit-outer-spin-button {
   .cards {
     max-width: 74.47916vw; /*1200px; =1410px + 20px paddings*/
     min-width: 300px;
-    margin: 4.42708vw auto 0.52083vw; /*85px auto 10px;*/
+    margin: 2.7vw auto 0.52083vw; /*85px auto 10px;*/
     padding-left: 0.52083vw; /*10px;*/
     padding-right: 0.52083vw; /*10px;*/
   }
