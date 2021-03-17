@@ -5863,7 +5863,7 @@ input::-webkit-outer-spin-button {
     /*grid-row-start: span 5;*/
   }
   .card--height-desktop {
-    min-height: 440px;
+    min-height: 22.91666vw;
     /*grid-row-start: span 3;*/
   }
   .card--min-height-desktop {
