@@ -26,7 +26,7 @@
     let link = $(this);
     //let parent = link.parent();
 
-    link.toggleClass(ModifierClass.SB_LINK).next().slideToggle();
+    link.toggleClass(ModifierClass.SB_LINK).siblings('ul').slideToggle();
     sidebarList.addClass(ModifierClass.SB_LIST);
 
     if (!sidebarLink.hasClass(ModifierClass.SB_LINK)) {
@@ -44,7 +44,7 @@
 
   });
 
-  sidebarLink.each(function() {
+  /*sidebarLink.each(function() {
     let link = $(this);
     let parent = link.parent();
     let url = link.attr('href');
@@ -55,6 +55,6 @@
   function setLink(url) {
     let link = $('<a class="nav__add-link" href="' + url + '">Перейти в раздел</a>');
     return link;
-  }
+  }*/
 
 })();
