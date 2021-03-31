@@ -6231,6 +6231,24 @@ input::-webkit-outer-spin-button {
     padding: 0 2.1875vw;
   }
 
+  .nav__add-link {
+    top: 0.57291vw;
+    padding: 0.41666vw 0.83333vw;
+    border-right-width: 0.20833vw;
+    font-size: 0.625vw;
+    box-shadow: 0.10416vw 0.10416vw 0.625vw rgb(3 7 14 / 20%);
+  }
+
+  .nav--aside .nav__add-link::before {
+    left: -0.52083vw;
+    width: 1.04166vw;
+    height: 1.04166vw;
+  }
+
+  .nav--aside .nav__add-link::after {
+    width: 0.83333vw;
+  }
+
   .top-panel__search {
     max-width: 3.48958vw;
     height: 4.6875vw;
