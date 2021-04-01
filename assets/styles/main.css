@@ -2013,8 +2013,13 @@ button {
   top: 0;
   width: 80px;
   height: 118px;
+  margin-top: 0;
   outline: 0;
   cursor: pointer;
+}
+
+.content__slider-control::after {
+  display: none;
 }
 
 .content__slider-control svg {
@@ -4444,9 +4449,15 @@ input::-webkit-outer-spin-button {
 .top-panel__form form {
   position: relative;
   max-width: 1180px;
-  min-height: 88px;
+  height: 88px;
   width: 100%;
   margin: 0 auto;
+}
+
+.top-panel__form form > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .top-panel__form,
@@ -4464,6 +4475,12 @@ input::-webkit-outer-spin-button {
   font-size: 14px;
   line-height: 32px;
   color: #ebebeb;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .top-panel__form input {
+    height: 39px;
+  }
 }
 
 .top-panel__form input::-webkit-input-placeholder {
@@ -6273,7 +6290,7 @@ input::-webkit-outer-spin-button {
 
   .top-panel__form form {
     max-width: 61.45833vw;
-    min-height: 4.58333vw;
+    height: 4.58333vw;
   }
 
   .top-panel__form input {
@@ -6843,6 +6860,13 @@ input::-webkit-outer-spin-button {
 
   .page:before {
     height: 9.73958vw;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (min-width: 1200px),
+  (-ms-high-contrast: none) and (min-width: 1200px) {
+  .top-panel__form input {
+    height: 2.03125vw;
   }
 }
 
