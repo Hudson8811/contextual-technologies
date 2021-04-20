@@ -8076,3 +8076,37 @@ input::-webkit-outer-spin-button {
     margin-bottom: 0;
   }
 }
+
+
+
+.glide__media{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.glide__media img{
+    width: 100%;
+    margin: 0;
+}
+.glide__media video,
+.glide__media iframe{
+    height: 200px !important;
+    width: 100% !important;
+}
+
+@media (min-width: 1200px){
+    .glide__media {
+        margin-top: 3.90625vw;
+    }
+}
+
+@media (max-width: 1199px){
+    .glide__media {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px){
+    .glide__media {
+        margin-top: 15px;
+    }
+}
